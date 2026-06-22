@@ -17,7 +17,7 @@ workflow: schema design → data generation → metric definition → dashboard
 build → insight write-up.
 
 > **Note on the data:** All ticket data in this repo is synthetically
-> generated (see `scripts/generate_dataset.py`). It is designed to mirror
+> generated. It is designed to mirror
 > realistic distributions and relationships you'd see in real support
 > operations data, but it is not real company data.
 
@@ -28,9 +28,7 @@ build → insight write-up.
 ```
 .
 ├── data/
-│   └── sample_tickets_1000.csv      # 1,000-row sample for quick inspection
-├── scripts/
-│   └── generate_dataset.py          # Generates the full 50,000-row dataset
+│   └── customer_support_tickets_50k.csv      # full 50,000 row synthetic data
 ├── docs/
 │   └── METRIC_DEFINITIONS.md        # KPI formulas, grain, and caveats
 ├── assets/
